@@ -24,16 +24,7 @@ function DisplayGame() {
         document.getElementById('text').innerHTML ="";
     }
     
-    useEffect(() => {
-        
-        let winner = checkWinner();
-        if (winner) {
-            
-           document.getElementById('text').innerHTML = ` Congratulation 🥇 ${winner=='X'? (localStorage.getItem("player1_name")) : (localStorage.getItem("player2_name"))} win the game!!!`;
-           
-          
-        }
-    }, [gameState])
+  
 
     const checkWinner = () => {
         const lines = [
@@ -57,7 +48,16 @@ function DisplayGame() {
         }
         return null;
     }
-
+    useEffect(() => {
+        
+      let winner = checkWinner();
+      if (winner) {
+          
+         document.getElementById('text').innerHTML = ` Congratulation 🥇 ${winner=='X'? (localStorage.getItem("player1_name")) : (localStorage.getItem("player2_name"))} win the game!!!`;
+         
+        
+      }
+  }, [gameState, checkWinner()])
 
   return (
 
