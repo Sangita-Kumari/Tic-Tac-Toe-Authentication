@@ -47,7 +47,7 @@ function DisplayGame() {
             }
         }
         return null;
-    }
+    } // eslint-disable-line react-hooks/exhaustive-deps
     useEffect(() => {
         
       let winner = checkWinner();
