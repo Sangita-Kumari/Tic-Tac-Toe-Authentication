@@ -1,0 +1,36 @@
+  .containers{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+   background-image: url('../images/bg-img2.jpg') ;
+   background-size: cover;
+   height: 100%; 
+   
+  }
+.name_container{
+    display: inline-block;
+    border: 5px solid red;
+    border-radius: 15px;
+    margin-top: 10%;
+    background-color: bisque;
+    height: 30rem;
+    width: 30rem;
+    
+  }
+  h3{
+    font-size: 3rem;
+  }
+    
+  h1{
+    color: rgb(82, 14, 201);
+    font-size: 3rem;
+  }
+  input{
+    border-radius: 10px;
+    background-color: chartreuse;
+    font-size: 2rem;
+  }
+  #start_btn{
+    font-size: 1.5rem;
+  }
