@@ -57,7 +57,8 @@ function DisplayGame() {
          
         
       }
-  }, [gameState, checkWinner()])
+      // eslint-disable-line react-hooks/exhaustive-deps
+  }, [gameState])
 
   return (
 
