@@ -1,4 +1,4 @@
-   
+/*    
         
     h1{
         color: black;
@@ -76,4 +76,133 @@
     background-color: blue;
     color: aliceblue;
     border-radius: 5px;
-}
+} */
+
+
+/* Common styles for all devices */
+h1 {
+    color: black;
+  }
+  
+  #welcome {
+    font-size: 2.5rem;
+  }
+  
+  #XO {
+    font-size: 2rem;
+  }
+  
+  #text {
+    font-size: 2rem;
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    background-color: blueviolet;
+  }
+  
+  .grid {
+    border: 5px solid rgb(13, 255, 0);
+    height: 50rem;
+    background-image: url('../images/bg-img1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .box {
+    display: inline-block;
+    background-color: cornsilk;
+  }
+  
+  .square {
+    width: 80px;
+    height: 50px;
+    font-size: 60px;
+    text-align: center;
+    color: #61e21b;
+    font-weight: bolder;
+    padding: 30px;
+  }
+  
+  .welcome {
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .b-top {
+    border-left: 15px solid rgb(15, 218, 22);
+    border-top: 15px solid rgb(245, 12, 12);
+    border-right: 15px solid rgb(245, 12, 12);
+    border-bottom: 15px solid rgb(245, 12, 12);
+  }
+  
+  #restart_btn {
+    height: 5%;
+    width: 8%;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 5px;
+  }
+  
+  /* Responsive styles for web */
+  @media (max-width: 1024px) {
+    #welcome {
+      font-size: 2rem;
+    }
+  
+    #XO {
+      font-size: 1.8rem;
+    }
+  
+    #text {
+      font-size: 1.8rem;
+    }
+  
+    .square {
+      width: 70px;
+      height: 45px;
+      font-size: 50px;
+      padding: 25px;
+    }
+  
+    #restart_btn {
+      height: 4%;
+      width: 6%;
+    }
+  }
+  
+  /* Responsive styles for Android devices */
+  @media only screen and (max-device-width: 480px) {
+    #welcome {
+      font-size: 1.8rem;
+    }
+  
+    #XO {
+      font-size: 1.5rem;
+    }
+  
+    #text {
+      font-size: 1.5rem;
+    }
+  
+    .square {
+      width: 60px;
+      height: 40px;
+      font-size: 40px;
+      padding: 20px;
+    }
+  
+    #restart_btn {
+      height: 3%;
+      width: 5%;
+    }
+  }
+  
