@@ -1,10 +1,10 @@
-.App {
+/* .App {
   text-align: center;
   /* background-image: url(./image/bg-img.jpg);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover; 
 }
-
+*/
 
 .inputStyl input{
 
@@ -74,4 +74,135 @@ li{
     background-color:pink;
   }
   
-  
+   */
+
+
+   /* Common styles for all devices */
+.App {
+  text-align: center;
+}
+
+.inputStyl input {
+  border-width: 1rem;
+  font-size: 1rem;
+  height: 2rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: lightblue;
+}
+
+.inputStyl button {
+  height: 2rem;
+  width: 4rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.inputStyl h1 {
+  border: 1rem solid #b53636;
+  display: inline-block;
+  background-color: #38e8dc;
+  color: #0a0a08;
+}
+
+.inputStyl {
+  border: 2rem solid lightskyblue;
+  max-width: 40rem;
+  margin: 0 auto;
+  background: burlywood;
+}
+
+.header {
+  border: 2px solid rgb(75, 247, 22);
+  height: 50px;
+  background-color: brown;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+#nav {
+  color: bisque;
+  float: right;
+  margin-right: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #a48b9d;
+}
+
+.navItem {
+  background-color: aqua;
+}
+
+.form {
+  width: 100%;
+  max-width: 50%;
+  background-color: white;
+}
+
+.formContainer {
+  border: 2px solid red;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: burlywood;
+}
+
+nav .active {
+  color: rgb(21, 227, 6);
+  font-size: larger;
+  background-color: pink;
+}
+
+/* Responsive styles for different devices */
+
+/* Web */
+@media screen and (max-width: 768px) {
+  .inputStyl {
+    border-width: 1rem;
+  }
+
+  .inputStyl input {
+    font-size: 0.8rem;
+  }
+
+  .inputStyl h1 {
+    border-width: 1rem;
+  }
+
+  .form {
+    max-width: 80%;
+  }
+
+  .formContainer {
+    max-width: 80%;
+  }
+}
+
+/* Android */
+@media screen and (max-width: 480px) {
+  .inputStyl {
+    border-width: 0.5rem;
+  }
+
+  .inputStyl input {
+    font-size: 0.7rem;
+  }
+
+  .inputStyl h1 {
+    border-width: 0.5rem;
+  }
+
+  .form {
+    max-width: 90%;
+  }
+
+  .formContainer {
+    max-width: 90%;
+  }
+}
